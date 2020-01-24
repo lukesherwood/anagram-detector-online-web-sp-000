@@ -6,7 +6,8 @@ def initialize(anagram)
 end
   
 def match
-  #recieve Array
+  self.each do |words|
+
   #iterate thru array to compare with anagram
   #split both words (one from array + anagram) into individual letters
   #sort letters and compare to anagram
