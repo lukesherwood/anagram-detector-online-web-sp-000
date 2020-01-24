@@ -7,11 +7,12 @@ end
   
 def match(array)
   #iterate thru array to compare with anagram
-  
+  anagram = @anagram.split("").sort
   array.select do |word| 
-    if word.split("").sort == @anagram.split("").sort
+    var = word.split("").sort
+    if var == anagram
+    end
   end
-end
 
   
   #split both words (one from array + anagram) into individual letters
