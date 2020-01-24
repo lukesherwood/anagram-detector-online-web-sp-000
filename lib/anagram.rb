@@ -9,7 +9,6 @@ def match(array)
   #iterate thru array to compare with anagram
   array.select do |word| 
     word.split("").sort == @anagram.split("").sort
-    end
   end
 
 #array_of_words.select do |element|
