@@ -15,7 +15,7 @@ def match(array)
       answer << word
     end
   end
-word
+answer
   
   #split both words (one from array + anagram) into individual letters
   #sort letters and compare to anagram
