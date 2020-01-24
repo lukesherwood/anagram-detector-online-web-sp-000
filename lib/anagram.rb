@@ -7,10 +7,9 @@ end
   
 def match(array)
   #iterate thru array to compare with anagram
-  var = @anagram.split("").sort
-  array.each do |words| 
-    if words.split("").sort == var
-      puts words
+  
+  array.select do |words| 
+    if words.split("").sort == @anagram.split("").sort
   end
 end
 
