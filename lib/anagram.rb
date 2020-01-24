@@ -10,6 +10,7 @@ def match(array)
   
   array.select do |words| 
     if words.split("").sort == @anagram.split("").sort
+      puts words
   end
 end
 
