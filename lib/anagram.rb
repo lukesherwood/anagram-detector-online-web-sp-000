@@ -8,8 +8,8 @@ end
 def match(array)
   #iterate thru array to compare with anagram
   
-  array.collect do |words| 
-    if words.split("").sort == @anagram.split("").sort
+  array.collect do |word| 
+    if word.split("").sort == @anagram.split("").sort
   end
 end
 
