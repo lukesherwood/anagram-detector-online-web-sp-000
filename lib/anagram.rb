@@ -5,10 +5,15 @@ def initialize(anagram)
   @anagram = anagram
 end
   
-def match
-  self.each do |words|
-
+def match(array)
   #iterate thru array to compare with anagram
+  var = @anagram.split("").sort
+  array.each do |words| 
+    if words.split("").sort == var
+      return words
+  end
+
+  
   #split both words (one from array + anagram) into individual letters
   #sort letters and compare to anagram
   #return (all) match(es)
