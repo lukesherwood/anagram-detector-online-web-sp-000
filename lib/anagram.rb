@@ -8,13 +8,14 @@ end
 def match(array)
   #iterate thru array to compare with anagram
   anagram = @anagram.split("").sort
-  array.select do |word| 
+  answer = []
+  array.each do |word| 
     var = word.split("").sort
     if var == anagram
-      puts word
+      answer << word
     end
   end
-
+word
   
   #split both words (one from array + anagram) into individual letters
   #sort letters and compare to anagram
