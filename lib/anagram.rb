@@ -12,6 +12,7 @@ def match(array)
     if words.split("").sort == var
       return words
   end
+end
 
   
   #split both words (one from array + anagram) into individual letters
