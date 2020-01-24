@@ -11,6 +11,7 @@ def match(array)
   array.select do |word| 
     var = word.split("").sort
     if var == anagram
+      return word
     end
   end
 
